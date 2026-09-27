@@ -11,10 +11,6 @@ body{margin:0;padding:12px 6px;min-height:100vh;color:var(--t);font:8px "Share T
 a{color:var(--d)}
 .window{max-width:500px;margin:auto;background:#fff9fb;border:2px solid var(--d);box-shadow:4px 4px #d79aaf,8px 8px #f0c8d7}
 .head{display:flex;justify-content:space-between;align-items:center;padding:4px 6px;background:linear-gradient(90deg,#c94376,#e96d9d 55%,#d95588);color:#fff;font-weight:bold;font-size:8px;text-shadow:1px 1px #9f315b}
-.head-left{display:flex;align-items:center;gap:5px}
-.lang{display:flex;gap:2px}
-.lang button{height:12px;padding:0 4px;background:linear-gradient(#fff8fb,#f6cfdd);color:var(--d);border:1px outset #fff;font:bold 6px "Share Tech Mono","Courier New",monospace;cursor:pointer}
-.lang button.active{background:var(--d);color:#fff;border:1px inset #fff}
 .buttons{display:flex;gap:2px;align-items:center}
 .buttons span{width:14px;height:12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(#fff8fb,#f6cfdd);color:var(--d);border:1px outset #fff;line-height:1;font-size:8px;text-shadow:none}
 .content{padding:6px;background:repeating-linear-gradient(0deg,#fff5f8 0,#fff5f8 15px,#fce3eb 16px),radial-gradient(#efbdd0 1px,transparent 1px);background-size:auto,9px 9px}
@@ -86,149 +82,213 @@ details[open] summary{color:var(--d);letter-spacing:1px}
 .accordion .inside{padding:5px;margin-bottom:5px;background:#fff1f6;border:1px solid #e5b9c9;animation:fade .25s}
 @keyframes fade{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
 .status{display:flex;justify-content:space-between;padding:4px 2px 1px;color:var(--m);font-size:5px;border-top:1px dotted #dfb5c5}
-@media(max-width:430px){.double,.stats{grid-template-columns:1fr}.profile{grid-template-columns:78px 1fr}.avatar-wrap,.avatar{width:78px}.avatar{height:93px}.info div{display:block}.info b{display:inline-block;margin-bottom:2px}.info span{display:block;text-align:left}}
+@media(max-width:430px){
+.double,.stats{grid-template-columns:1fr}
+.profile{grid-template-columns:78px 1fr}
+.avatar-wrap,.avatar{width:78px}
+.avatar{height:93px}
+.info div{display:block}
+.info b{display:inline-block;margin-bottom:2px}
+.info span{display:block;text-align:left}
+}
 </style>
 </head>
 <body>
 <div class="window">
 <div class="head">
-<div class="head-left"><span>𖹭 FIRST HAVEN :: Profile.exe</span><div class="lang"><button id="esBtn" class="active" onclick="setLang('es')">ES</button><button id="enBtn" onclick="setLang('en')">EN</button></div></div>
+<span>𖹭 FIRST HAVEN :: Profile.exe</span>
 <div class="buttons"><span>_</span><span>□</span><span>×</span></div>
 </div>
 <div class="content">
 
 <div class="panel">
-<div class="title"><span data-es="𖹭 PERFIL DEL PERSONAJE" data-en="𖹭 CHARACTER PROFILE"></span><span>PROFILE_01</span></div>
+<div class="title"><span>𖹭 PERFIL DEL PERSONAJE</span><span>PROFILE_01</span></div>
 <div class="profile">
-<div class="avatar-wrap"><div class="status-badge"><span data-es="ESTATUS:" data-en="STATUS:"></span> [ESTATUS]</div><img class="avatar" src="https://cdn.discordapp.com/attachments/1475569986352316560/1553533921969315862/1f9a91d7e4bce09f89e82c89e9d40e8c.jpg?ex=6ab998b6&is=6ab84736&hm=35f7a510ff4fbc8de2c326d05f6887db7d5ecaaa503eb720598ba29d2879e9ac&" alt="Foto de perfil"></div>
-<div><div class="name">[Nombre del personaje]</div><div class="alias"><span class="alias-tag">[Alias / Apodo]</span><span class="alias-tag">[Segundo alias]</span></div><div class="role">[ROL DEL PERSONAJE]</div></div>
+<div class="avatar-wrap">
+<div class="status-badge">ESTATUS: [ESTATUS]</div>
+<img class="avatar" src="https://cdn.discordapp.com/attachments/1475569986352316560/1553533921969315862/1f9a91d7e4bce09f89e82c89e9d40e8c.jpg?ex=6ab998b6&is=6ab84736&hm=35f7a510ff4fbc8de2c326d05f6887db7d5ecaaa503eb720598ba29d2879e9ac&" alt="Foto de perfil">
+</div>
+<div>
+<div class="name">[Nombre del personaje]</div>
+<div class="alias">
+<span class="alias-tag">[Alias / Apodo]</span>
+<span class="alias-tag">[Segundo alias]</span>
+</div>
+<div class="role">[ROL DEL PERSONAJE]</div>
+</div>
 </div>
 </div>
 
 <div class="panel">
-<div class="title"><span data-es="INFORMACIÓN BÁSICA" data-en="BASIC INFORMATION"></span><span>PROFILE_02</span></div>
+<div class="title"><span>INFORMACIÓN BÁSICA</span><span>PROFILE_02</span></div>
 <div class="info">
-<div><b data-es="EDAD" data-en="AGE"></b><span>[Edad]</span></div>
-<div><b data-es="CUMPLEAÑOS" data-en="BIRTHDAY"></b><span>[Fecha]</span></div>
-<div><b data-es="ALTURA" data-en="HEIGHT"></b><span>[Altura]</span></div>
-<div><b data-es="OCUPACIÓN" data-en="OCCUPATION"></b><span>[Ocupación]</span></div>
-<div><b data-es="CARRERA" data-en="DEGREE"></b><span>[Carrera]</span></div>
-<div><b data-es="PASATIEMPO" data-en="HOBBY"></b><span>[Pasatiempo]</span></div>
-<div><b data-es="ROL" data-en="ROLE"></b><span>[Rol]</span></div>
-<div><b data-es="ESTADO CIVIL" data-en="MARITAL STATUS"></b><span>[Estado civil]</span></div>
+<div><b>EDAD</b><span>[Edad]</span></div>
+<div><b>CUMPLEAÑOS</b><span>[Fecha]</span></div>
+<div><b>ALTURA</b><span>[Altura]</span></div>
+<div><b>OCUPACIÓN</b><span>[Ocupación]</span></div>
+<div><b>CARRERA</b><span>[Carrera]</span></div>
+<div><b>PASATIEMPO</b><span>[Pasatiempo]</span></div>
+<div><b>ROL</b><span>[Rol]</span></div>
+<div><b>ESTADO CIVIL</b><span>[Estado civil]</span></div>
 </div>
 </div>
 
 <div class="panel">
-<div class="title"><span>𖹭 <span data-es="ESTADÍSTICAS" data-en="STATISTICS"></span></span><span>DATOS_01</span></div>
-<div class="stat"><div class="stat-name"><span data-es="REPUTACIÓN" data-en="REPUTATION"></span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
-<div class="stat"><div class="stat-name"><span data-es="ESTRÉS" data-en="STRESS"></span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
-<div class="stat"><div class="stat-name"><span data-es="SANIDAD / CORDURA" data-en="SANITY"></span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
-<div class="stat"><div class="stat-name"><span data-es="OBSESIÓN" data-en="OBSESSION"></span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="title"><span>𖹭 ESTADÍSTICAS</span><span>DATOS_01</span></div>
+<div class="stat"><div class="stat-name"><span>REPUTACIÓN</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>ESTRÉS</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>SANIDAD / CORDURA</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>OBSESIÓN</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
 </div>
 
 <div class="panel">
-<div class="title"><span>𖹭 <span data-es="BIOGRAFÍA DEL PERSONAJE" data-en="CHARACTER BIOGRAPHY"></span></span><span>HISTORIA_01</span></div>
-<details class="file" open><summary><span class="file-title play" data-es="&gt;&gt; ABRIR BIOGRAFÍA.TXT" data-en="&gt;&gt; OPEN BIOGRAPHY.TXT"></span></summary><div class="file-body"><div class="scrollbox">[Biografía extensa del personaje. Escribe aquí toda la información general e importante del personaje. El contenido de esta caja no tiene la animación de máquina de escribir.]</div></div></details>
+<div class="title"><span>𖹭 BIOGRAFÍA DEL PERSONAJE</span><span>HISTORIA_01</span></div>
+<details class="file" open>
+<summary><span class="file-title play">&gt;&gt; ABRIR BIOGRAFÍA.TXT</span></summary>
+<div class="file-body"><div class="scrollbox">[Biografía extensa del personaje. Escribe aquí toda la información general e importante del personaje. El contenido de esta caja no tiene la animación de máquina de escribir.]</div></div>
+</details>
 </div>
 
 <div class="panel">
-<div class="title"><span>𖹭 <span data-es="TRASFONDO" data-en="BACKGROUND"></span></span><span>HISTORIA_02</span></div>
-<details class="file"><summary><span class="file-title" data-es="&gt;&gt; ABRIR TRASFONDO.LOG" data-en="&gt;&gt; OPEN BACKGROUND.LOG"></span></summary><div class="file-body"><div class="scrollbox">[Información extensa sobre el trasfondo del personaje. Puedes colocar aquí acontecimientos, historia familiar, experiencias, relaciones previas y cualquier otro elemento relevante.]</div></div></details>
+<div class="title"><span>𖹭 TRASFONDO</span><span>HISTORIA_02</span></div>
+<details class="file">
+<summary><span class="file-title">&gt;&gt; ABRIR TRASFONDO.LOG</span></summary>
+<div class="file-body"><div class="scrollbox">[Información extensa sobre el trasfondo del personaje. Puedes colocar aquí acontecimientos, historia familiar, experiencias, relaciones previas y cualquier otro elemento relevante.]</div></div>
+</details>
 </div>
 
 <div class="panel">
-<div class="title"><span>𖹭 <span data-es="PREFERENCIAS" data-en="PREFERENCES"></span></span><span>DATOS_02</span></div>
+<div class="title"><span>𖹭 PREFERENCIAS</span><span>DATOS_02</span></div>
 <div class="double">
-<div class="box"><details><summary>𖹭 <span data-es="GUSTOS" data-en="LIKES"></span></summary><div class="inside"><ul class="list"><li>[Gusto]</li><li>[Gusto]</li><li>[Gusto]</li><li>[Gusto]</li><li>[Gusto]</li></ul></div></details></div>
-<div class="box"><details><summary>× <span data-es="DISGUSTOS" data-en="DISLIKES"></span></summary><div class="inside"><ul class="list"><li>[Disgusto]</li><li>[Disgusto]</li><li>[Disgusto]</li><li>[Disgusto]</li><li>[Disgusto]</li></ul></div></details></div>
+<div class="box">
+<details>
+<summary>𖹭 GUSTOS</summary>
+<div class="inside">
+<ul class="list">
+<li>[Gusto]</li><li>[Gusto]</li><li>[Gusto]</li><li>[Gusto]</li><li>[Gusto]</li>
+</ul>
+</div>
+</details>
+</div>
+<div class="box">
+<details>
+<summary>× DISGUSTOS</summary>
+<div class="inside">
+<ul class="list">
+<li>[Disgusto]</li><li>[Disgusto]</li><li>[Disgusto]</li><li>[Disgusto]</li><li>[Disgusto]</li>
+</ul>
+</div>
+</details>
+</div>
 </div>
 </div>
 
 <div class="panel">
-<div class="title"><span>𖹭 <span data-es="AMOR" data-en="LOVE"></span></span><span>LOVE_01</span></div>
-<div class="box" style="margin-bottom:6px"><details class="file crush-file"><summary><span class="file-title" data-es="&gt;&gt; CRUSH.EXE" data-en="&gt;&gt; CRUSH.EXE"></span></summary><div class="file-body"><div class="scrollbox"><b style="color:var(--d)">CRUSH:</b> [Crush]<br><br>[Información adicional sobre el crush o la dinámica romántica.]</div></div></details></div>
+<div class="title"><span>𖹭 AMOR</span><span>LOVE_01</span></div>
+<div class="box" style="margin-bottom:6px">
+<details class="file crush-file">
+<summary><span class="file-title">&gt;&gt; CRUSH.EXE</span></summary>
+<div class="file-body">
+<div class="scrollbox">
+<b style="color:var(--d)">CRUSH:</b> [Crush]
+<br><br>[Información adicional sobre el crush o la dinámica romántica.]
+</div>
+</div>
+</details>
+</div>
 <div class="stats-box">
 <div class="stats-title">LOVE LANGUAGE</div>
-<div class="love-item"><div class="stat-name"><span data-es="CONTACTO FÍSICO" data-en="PHYSICAL TOUCH"></span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
-<div class="love-item"><div class="stat-name"><span data-es="ACTOS DE SERVICIO" data-en="ACTS OF SERVICE"></span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
-<div class="love-item"><div class="stat-name"><span data-es="TIEMPO DE CALIDAD" data-en="QUALITY TIME"></span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
-<div class="love-item"><div class="stat-name"><span data-es="REGALOS" data-en="GIFTS"></span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
-<div class="love-item"><div class="stat-name"><span data-es="PALABRAS DE AFIRMACIÓN" data-en="WORDS OF AFFIRMATION"></span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="love-item"><div class="stat-name"><span>CONTACTO FÍSICO</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="love-item"><div class="stat-name"><span>ACTOS DE SERVICIO</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="love-item"><div class="stat-name"><span>TIEMPO DE CALIDAD</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="love-item"><div class="stat-name"><span>REGALOS</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="love-item"><div class="stat-name"><span>PALABRAS DE AFIRMACIÓN</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
 </div>
 </div>
 
 <div class="panel">
 <div class="title"><span>𖹭 INTERESTS.EXE</span><span>INTERESES_01</span></div>
 <div class="accordion">
-<details><summary><span data-es="INTERESES" data-en="INTERESTS"></span></summary><div class="inside"><ul class="list"><li>[Interés]</li><li>[Interés]</li><li>[Interés]</li><li>[Interés]</li><li>[Interés]</li></ul></div></details>
-<details><summary><span data-es="OTROS" data-en="OTHER"></span></summary><div class="inside"><ul class="list"><li>[Interés]</li><li>[Interés]</li><li>[Interés]</li><li>[Interés]</li><li>[Interés]</li></ul></div></details>
+<details><summary>INTERESES</summary><div class="inside"><ul class="list"><li>[Interés]</li><li>[Interés]</li><li>[Interés]</li><li>[Interés]</li><li>[Interés]</li></ul></div></details>
+<details><summary>OTROS</summary><div class="inside"><ul class="list"><li>[Interés]</li><li>[Interés]</li><li>[Interés]</li><li>[Interés]</li><li>[Interés]</li></ul></div></details>
 </div>
 </div>
 
 <div class="panel">
 <div class="title"><span>𖹭 NOW PLAYING / MP3</span><span>MP3.EXE</span></div>
-<div class="player"><div class="player-top"><div class="album">♫</div><div class="song"><b>[Título de la canción]</b><span>[Artista]</span></div></div><div class="controls"><span class="control">◀</span><span class="control">▶</span><span class="control">■</span><div class="timeline"><span></span></div><span style="font-size:6px">00:00</span></div></div>
+<div class="player">
+<div class="player-top">
+<div class="album">♫</div>
+<div class="song"><b>[Título de la canción]</b><span>[Artista]</span></div>
 </div>
-
-<div class="panel">
-<div class="title"><span>𖹭 <span data-es="INFORMACIÓN ADICIONAL" data-en="ADDITIONAL INFORMATION"></span></span><span>DATOS_03</span></div>
-<div class="accordion"><details><summary><span data-es="NOTAS DEL PERSONAJE" data-en="CHARACTER NOTES"></span></summary><div class="inside">[Información adicional.]<br><br>[Dato adicional.]<br><br>[Dato adicional.]</div></details></div>
-</div>
-
-<div class="panel">
-<div class="title"><span>𖹭 <span data-es="ATRIBUTOS" data-en="ATTRIBUTES"></span></span><span>STATS_01</span></div>
-<div class="stats">
-<div class="stats-box"><div class="stats-title" data-es="MENTALES" data-en="MENTAL"></div>
-<div class="stat"><div class="stat-name"><span data-es="FELICIDAD" data-en="HAPPINESS"></span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
-<div class="stat"><div class="stat-name"><span data-es="EMPATÍA" data-en="EMPATHY"></span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
-<div class="stat"><div class="stat-name"><span data-es="AUTOCONTROL" data-en="SELF-CONTROL"></span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
-<div class="stat"><div class="stat-name"><span data-es="INTUICIÓN" data-en="INTUITION"></span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
-<div class="stat"><div class="stat-name"><span data-es="DETERMINACIÓN" data-en="DETERMINATION"></span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
-</div>
-<div class="stats-box"><div class="stats-title" data-es="HABILIDADES" data-en="SKILLS"></div>
-<div class="stat"><div class="stat-name"><span data-es="INTELECTO ACADÉMICO" data-en="ACADEMIC INTELLECT"></span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
-<div class="stat"><div class="stat-name"><span data-es="CARISMA / SEDUCCIÓN" data-en="CHARISMA / SEDUCTION"></span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
-<div class="stat"><div class="stat-name"><span data-es="CONDICIÓN FÍSICA" data-en="PHYSICAL CONDITION"></span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
-<div class="stat"><div class="stat-name"><span data-es="FUERZA / DEFENSA" data-en="STRENGTH / DEFENSE"></span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
-<div class="stat"><div class="stat-name"><span data-es="DISCRECIÓN / SIGILO" data-en="DISCRETION / STEALTH"></span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="controls">
+<span class="control">◀</span>
+<span class="control">▶</span>
+<span class="control">■</span>
+<div class="timeline"><span></span></div>
+<span style="font-size:6px">00:00</span>
 </div>
 </div>
 </div>
 
 <div class="panel">
-<div class="title"><span>𖹭 <span data-es="RELACIONES" data-en="RELATIONSHIPS"></span></span><span>RELACIONES_01</span></div>
+<div class="title"><span>𖹭 INFORMACIÓN ADICIONAL</span><span>DATOS_03</span></div>
 <div class="accordion">
-<details><summary class="relation-line"><span class="relation-name">𖹭 {{user}}</span><span class="relation-tag" data-es="RELACIÓN" data-en="RELATION"></span></summary><div class="inside">[Información sobre la relación con {{user}}.]</div></details>
-<details><summary class="relation-line"><span class="relation-name">𖹭 [Nombre]</span><span class="relation-tag" data-es="RELACIÓN" data-en="RELATION"></span></summary><div class="inside">[Información sobre esta relación.]</div></details>
-<details><summary class="relation-line"><span class="relation-name">𖹭 [Nombre]</span><span class="relation-tag" data-es="RELACIÓN" data-en="RELATION"></span></summary><div class="inside">[Información sobre esta relación.]</div></details>
-<details><summary class="relation-line"><span class="relation-name">𖹭 [Nombre]</span><span class="relation-tag" data-es="RELACIÓN" data-en="RELATION"></span></summary><div class="inside">[Información sobre esta relación.]</div></details>
+<details><summary>NOTAS DEL PERSONAJE</summary><div class="inside">[Información adicional.]<br><br>[Dato adicional.]<br><br>[Dato adicional.]</div></details>
 </div>
 </div>
 
 <div class="panel">
-<div class="title"><span>ABOUT.EXE — <span data-es="ADVERTENCIA" data-en="WARNING"></span></span><span>SYSTEM</span></div>
+<div class="title"><span>𖹭 ATRIBUTOS</span><span>STATS_01</span></div>
+<div class="stats">
+<div class="stats-box">
+<div class="stats-title">MENTALES</div>
+<div class="stat"><div class="stat-name"><span>FELICIDAD</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>EMPATÍA</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>AUTOCONTROL</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>INTUICIÓN</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>DETERMINACIÓN</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+</div>
+<div class="stats-box">
+<div class="stats-title">HABILIDADES</div>
+<div class="stat"><div class="stat-name"><span>INTELECTO ACADÉMICO</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>CARISMA / SEDUCCIÓN</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>CONDICIÓN FÍSICA</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>FUERZA / DEFENSA</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>DISCRECIÓN / SIGILO</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+</div>
+</div>
+</div>
+
+<div class="panel">
+<div class="title"><span>𖹭 RELACIONES</span><span>RELACIONES_01</span></div>
+<div class="accordion">
+<details><summary class="relation-line"><span class="relation-name">𖹭 {{user}}</span><span class="relation-tag">RELACIÓN</span></summary><div class="inside">[Información sobre la relación con {{user}}.]</div></details>
+<details><summary class="relation-line"><span class="relation-name">𖹭 [Nombre]</span><span class="relation-tag">RELACIÓN</span></summary><div class="inside">[Información sobre esta relación.]</div></details>
+<details><summary class="relation-line"><span class="relation-name">𖹭 [Nombre]</span><span class="relation-tag">RELACIÓN</span></summary><div class="inside">[Información sobre esta relación.]</div></details>
+<details><summary class="relation-line"><span class="relation-name">𖹭 [Nombre]</span><span class="relation-tag">RELACIÓN</span></summary><div class="inside">[Información sobre esta relación.]</div></details>
+</div>
+</div>
+
+<div class="panel">
+<div class="title"><span>ABOUT.EXE — ADVERTENCIA</span><span>SYSTEM</span></div>
 <div class="about">
 <div class="about-head">SYSTEM MESSAGE :: FIRST HAVEN</div>
-<div class="about-body"><span class="warning">⚠ <span data-es="ADVERTENCIA:" data-en="WARNING:"></span></span><br>[Advertencia, curiosidad o nota importante sobre este personaje.]</div>
+<div class="about-body"><span class="warning">⚠ ADVERTENCIA:</span><br>[Advertencia, curiosidad o nota importante sobre este personaje.]</div>
 </div>
 </div>
 
-<div class="status"><span data-es="ÚLTIMA ACTUALIZACIÓN: 26/09/26" data-en="LAST UPDATED: 26/09/26"></span><span>𖹭 FIRST HAVEN ©Phaqura's</span></div>
+<div class="status">
+<span>ÚLTIMA ACTUALIZACIÓN: 26/09/26</span>
+<span>𖹭 FIRST HAVEN ©Phaqura's</span>
+</div>
+
 </div>
 </div>
 
 <script>
-function setLang(l){
-document.documentElement.lang=l;
-document.querySelectorAll("[data-"+l+"]").forEach(e=>e.innerHTML=e.getAttribute("data-"+l));
-document.getElementById("esBtn").classList.toggle("active",l==="es");
-document.getElementById("enBtn").classList.toggle("active",l==="en");
-localStorage.setItem("fh-lang",l)
-}
 function typeTitle(e){e.classList.remove("play");void e.offsetWidth;e.classList.add("play")}
 document.querySelectorAll(".file").forEach(f=>{const t=f.querySelector(".file-title");if(f.open)typeTitle(t);f.addEventListener("toggle",()=>{if(f.open)typeTitle(t)})});
-setLang(localStorage.getItem("fh-lang")||"es");
 </script>
 </body>
 </html>
