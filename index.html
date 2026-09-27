@@ -3,398 +3,292 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>First Haven</title>
-
+<title>First Haven :: Profile.exe</title>
 <style>
-:root{--p:#ff5f9a;--d:#d93672;--s:#ffc9dd;--l:#fff2f7;--t:#593746}
+:root{--p:#f06b9f;--d:#c94376;--s:#e9b8cb;--l:#fff0f5;--w:#fffafd;--t:#542f3d;--m:#8f6071;--dk:#a93462;--bg:#f9dfe9}
 *{box-sizing:border-box}
-
-body{
-margin:0;min-height:100vh;padding:18px 8px;
-background:linear-gradient(#fff7fb,#ffdce9);
-color:var(--t);font:10px "Courier New",monospace
-}
-
-.window{
-max-width:480px;margin:auto;background:white;
-border:2px solid var(--d);
-border-radius:7px;
-box-shadow:4px 4px 0 #d85b89;
-overflow:hidden
-}
-
-.head{
-display:flex;justify-content:space-between;align-items:center;
-padding:5px 7px;
-background:linear-gradient(90deg,var(--d),var(--p));
-color:white;font-weight:bold;font-size:10px
-}
-
-.buttons{display:flex;gap:3px}
-.buttons span{
-width:13px;height:12px;text-align:center;
-background:#ffe5ef;color:var(--d);
-border:1px solid white
-}
-
-.content{
-padding:7px;
-background:repeating-linear-gradient(
-0deg,transparent,transparent 17px,#ffdce8 18px
-)
-}
-
-.panel{
-background:#fffffff2;
-border:1px solid var(--p);
-border-radius:4px;
-padding:7px;
-margin-bottom:7px;
-box-shadow:2px 2px 0 #f3a4c1
-}
-
-.title{
-display:flex;justify-content:space-between;
-margin:-7px -7px 6px;
-padding:4px 6px;
-background:var(--l);
-border-bottom:1px solid var(--s);
-color:var(--d);
-font-size:8px;
-font-weight:bold;
-letter-spacing:.7px
-}
-
-/* REPUTACIÓN */
-
-.rep{margin-bottom:6px}
-
-.rep-title{
-display:flex;
-justify-content:space-between;
-margin-bottom:2px;
-color:var(--d);
-font-size:7px;
-font-weight:bold
-}
-
-.bar{
-height:6px;
-padding:1px;
-background:#ffe1ec;
-border:1px solid var(--s)
-}
-
-.bar span{
-display:block;
-height:100%;
-background:linear-gradient(90deg,var(--p),var(--d))
-}
-
-/* INFORMACIÓN */
-
-.info{
-display:grid;
-grid-template-columns:1fr 1fr;
-border:1px solid var(--s)
-}
-
-.info div{
-padding:4px 5px;
-border-bottom:1px dotted var(--s)
-}
-
-.info div:nth-child(odd){
-border-right:1px dotted var(--s)
-}
-
-.info b{
-display:block;
-margin-bottom:1px;
-color:var(--d);
-font-size:6px
-}
-
-.info span{font-size:8px}
-
-/* DATOS + PERSONALIDAD */
-
-.double{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:7px
-}
-
-.box{
-background:var(--l);
-border:1px solid var(--s);
-padding:6px
-}
-
-.box h3{
-margin:0 0 6px;
-color:var(--d);
-font-size:7px;
-font-weight:bold;
-letter-spacing:.7px
-}
-
-.fact{
-margin:5px 0;
-font-size:7px;
-line-height:1.35
-}
-
-/* PERSONALIDAD */
-
-.trait{margin:6px 0}
-
-.trait-name{
-display:flex;
-justify-content:space-between;
-margin-bottom:2px;
-color:var(--d);
-font-size:7px;
-font-weight:bold
-}
-
-/* RELACIONES */
-
-.relationship{
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:8px;
-padding:5px 2px;
-border-bottom:1px dotted var(--s)
-}
-
-.relationship:last-child{border-bottom:0}
-
-.relationship-name{
-color:var(--d);
-font-size:8px;
-font-weight:bold
-}
-
-.relation-tag{
-padding:2px 5px;
-border:1px solid var(--p);
-border-radius:3px;
-background:var(--l);
-color:var(--d);
-font-size:6px;
-font-weight:bold;
-white-space:nowrap
-}
-
-/* PIE */
-
-.status{
-display:flex;
-justify-content:space-between;
-margin-top:5px;
-padding-top:4px;
-border-top:1px dotted var(--s);
-color:#9b6a7e;
-font-size:6px
-}
-
-/* MÓVIL */
-
+body{margin:0;padding:12px 6px;min-height:100vh;color:var(--t);font:8px "Share Tech Mono","Courier New",monospace;background:var(--bg);background-image:radial-gradient(#e7a9c0 1px,transparent 1px),linear-gradient(135deg,transparent 0 49%,#f5cbd9 50%,transparent 51%);background-size:11px 11px,22px 22px}
+a{color:var(--d)}
+.window{max-width:500px;margin:auto;background:#fff9fb;border:2px solid var(--d);box-shadow:4px 4px #d79aaf,8px 8px #f0c8d7}
+.head{display:flex;justify-content:space-between;align-items:center;padding:4px 6px;background:linear-gradient(90deg,#c94376,#e96d9d 55%,#d95588);color:#fff;font-weight:bold;font-size:8px;text-shadow:1px 1px #9f315b}
+.buttons{display:flex;gap:2px;align-items:center}
+.buttons span{width:14px;height:12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(#fff8fb,#f6cfdd);color:var(--d);border:1px outset #fff;line-height:1;font-size:8px;text-shadow:none}
+.content{padding:6px;background:repeating-linear-gradient(0deg,#fff5f8 0,#fff5f8 15px,#fce3eb 16px),radial-gradient(#efbdd0 1px,transparent 1px);background-size:auto,9px 9px}
+.panel{margin-bottom:6px;padding:6px;background:rgba(255,255,255,.96);border:1px solid var(--p);box-shadow:2px 2px #e4b2c4}
+.title{display:flex;justify-content:space-between;margin:-6px -6px 6px;padding:4px 5px;background:linear-gradient(#fff8fb,#f7d4df);border-bottom:1px solid var(--s);color:var(--d);font-size:7px;font-weight:bold;letter-spacing:.6px;text-shadow:1px 1px #fff}
+.profile{display:grid;grid-template-columns:88px 1fr;gap:8px}
+.avatar-wrap{position:relative;width:88px}
+.avatar{width:88px;height:103px;object-fit:cover;padding:3px;background:#fff;border:2px solid var(--d);box-shadow:3px 3px #e4b3c5;transform:rotate(-2deg)}
+.status-badge{position:absolute;z-index:2;top:-3px;left:-3px;padding:3px 5px;background:#fff7fa;border:1px solid var(--d);box-shadow:2px 2px #dfacbf;color:var(--d);font-size:5px;font-weight:bold;transform:rotate(-2deg)}
+.name{margin:2px 0 5px;color:var(--d);font:bold 14px Georgia,serif;text-shadow:1px 1px #f4ccd9}
+.alias{display:flex;flex-wrap:wrap;gap:3px;color:var(--d);font-size:6px;line-height:1.5}
+.alias-tag,.role{display:inline-block;padding:3px 5px;background:linear-gradient(#fff8fb,#f6d2df);border:1px solid var(--p);box-shadow:1px 1px #dba6ba;color:var(--d);font-size:6px;font-weight:bold;letter-spacing:.2px;white-space:nowrap}
+.role{margin-top:5px;background:linear-gradient(#fce3eb,#efbfd0)}
+.info{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--s);gap:4px;padding:4px;background:#fffafd}
+.info div{display:flex;align-items:center;justify-content:space-between;gap:4px;padding:4px;background:#fff1f6;border:1px solid #edc4d3}
+.info b{display:inline-block;padding:2px 4px;background:linear-gradient(#fff9fb,#f5d3df);border:1px solid var(--p);box-shadow:1px 1px #dca8bb;color:var(--d);font-size:5px;font-weight:bold;white-space:nowrap}
+.info span{font-size:6px;color:var(--t);text-align:right}
+.text{font-size:7px;line-height:1.6;margin:3px 0}
+details summary{cursor:pointer;color:var(--d);font-weight:bold;font-size:7px;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary:after{content:"○";float:right;color:var(--p);font-size:9px}
+details[open] summary:after{content:"●"}
+details[open] summary{color:var(--d);letter-spacing:1px}
+.double,.stats{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.box,.stats-box{padding:6px;background:#fff0f5;border:1px solid var(--s);box-shadow:inset 0 0 0 1px #fff}
+.box h3,.stats-title{margin:0 0 5px;color:var(--d);font-size:7px;letter-spacing:.5px}
+.list{margin:3px 0;padding-left:12px;font-size:6px;line-height:1.5}
+.list li{margin-bottom:2px}
+.stat{margin:5px 0}
+.stat-name{display:flex;justify-content:space-between;margin-bottom:2px;color:var(--d);font-size:6px;font-weight:bold}
+.bar{height:6px;padding:1px;background:#f8dce6;border:1px solid #e3b5c7}
+.bar span{display:block;height:100%;background:repeating-linear-gradient(90deg,#e78aad 0,#e78aad 5px,#c94376 5px,#c94376 6px,#e78aad 6px,#e78aad 10px);box-shadow:inset 0 1px #f5b3c9}
+.love-item{margin:5px 0}
+.love-item:last-child{margin-bottom:0}
+.player{padding:5px;background:repeating-linear-gradient(135deg,#f8dce6 0,#f8dce6 4px,#fff7fa 4px,#fff7fa 8px);border:2px inset #dfaabd}
+.player-top{display:flex;align-items:center;gap:6px}
+.album{width:40px;height:40px;display:flex;align-items:center;justify-content:center;background:radial-gradient(#e7a6bd 1px,transparent 1px),#fff3f7;background-size:6px 6px;border:1px solid var(--d);color:var(--d);font-size:14px}
+.song{flex:1}
+.song b{display:block;color:var(--d);font-size:7px}
+.song span{font-size:6px;color:var(--m)}
+.controls{display:flex;align-items:center;gap:3px;margin-top:5px}
+.control{width:18px;height:15px;display:flex;align-items:center;justify-content:center;background:#fff5f8;border:1px outset #fff;color:var(--d);font-size:7px}
+.timeline{flex:1;height:5px;background:#fff;border:1px solid #dfb4c5}
+.timeline span{display:block;width:100%;height:100%;background:var(--d)}
+.relation-line{display:flex;align-items:center;gap:5px;padding:5px 2px;border-bottom:1px dotted #e4b7c7}
+.relation-line:last-child{border:0}
+.relation-name{flex:1;color:var(--d);font-weight:bold;font-size:7px;min-width:0}
+.relation-tag{display:inline-block;flex-shrink:0;padding:2px 5px;background:linear-gradient(#fff8fb,#f5d2df);border:1px solid var(--p);box-shadow:1px 1px #dca7ba;color:var(--d);font-size:5px;font-weight:bold;letter-spacing:.4px;text-transform:uppercase;white-space:nowrap}
+.about{border:2px solid var(--d);box-shadow:3px 3px #dca9bb}
+.about-head{padding:3px 5px;background:linear-gradient(90deg,var(--d),#e875a1);color:#fff;font-size:6px;font-weight:bold;text-shadow:1px 1px #a63b61}
+.about-body{padding:6px;font-size:7px;line-height:1.5;background:repeating-linear-gradient(0deg,#fff8fa 0,#fff8fa 13px,#fbe8ef 14px)}
+.warning{color:var(--d);font-weight:bold}
+.scrollbox{max-height:120px;overflow-y:auto;padding:6px;background:#fff0f5;border-left:3px solid var(--p);font-size:7px;line-height:1.6}
+.scrollbox::-webkit-scrollbar{width:6px}
+.scrollbox::-webkit-scrollbar-track{background:#f3d6e1}
+.scrollbox::-webkit-scrollbar-thumb{background:#e18aaa;border:1px solid var(--d)}
+.file{border:1px solid #e4b5c7;background:#fff}
+.file summary{padding:5px 6px;background:linear-gradient(90deg,#d95783,#e887a9 70%,#d95783);color:#fff;border:0;font-size:7px;text-shadow:1px 1px #a63b61}
+.file summary:after{display:none}
+.file[open] summary{background:linear-gradient(90deg,#c94376,#e17b9f 70%,#c94376)}
+.file-body{padding:6px;background:#fff4f7;border-top:1px solid var(--s);line-height:1.6}
+.file-title{display:inline-block;color:#fff;white-space:nowrap;overflow:hidden;width:0;vertical-align:bottom;border-right:1px solid #fff}
+.file-title.play{animation:typewriter 1.8s steps(30,end) forwards,blink .7s step-end infinite}
+@keyframes typewriter{from{width:0}to{width:100%}}
+@keyframes blink{50%{border-color:transparent}}
+.accordion details{margin-bottom:4px;border-bottom:1px dotted #e3b4c5}
+.accordion summary{padding:5px 2px;text-transform:uppercase;transition:.25s}
+.accordion details[open] summary{letter-spacing:2px}
+.accordion .inside{padding:5px;margin-bottom:5px;background:#fff1f6;border:1px solid #e5b9c9;animation:fade .25s}
+@keyframes fade{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+.status{display:flex;justify-content:space-between;padding:4px 2px 1px;color:var(--m);font-size:5px;border-top:1px dotted #dfb5c5}
 @media(max-width:430px){
-.double{grid-template-columns:1fr}
+.double,.stats{grid-template-columns:1fr}
+.profile{grid-template-columns:78px 1fr}
+.avatar-wrap,.avatar{width:78px}
+.avatar{height:93px}
+.info div{display:block}
+.info b{display:inline-block;margin-bottom:2px}
+.info span{display:block;text-align:left}
 }
 </style>
 </head>
-
 <body>
-
 <div class="window">
-
 <div class="head">
-<span>𖹭 “FIRST HAVEN”: Simulator</span>
-<div class="buttons">
-<span>—</span><span>□</span><span>×</span>
+<span>𖹭 FIRST HAVEN :: Profile.exe</span>
+<div class="buttons"><span>_</span><span>□</span><span>×</span></div>
 </div>
-</div>
-
 <div class="content">
 
-<!-- INFORMACIÓN BÁSICA -->
+<div class="panel">
+<div class="title"><span>𖹭 PERFIL DEL PERSONAJE</span><span>PROFILE_01</span></div>
+<div class="profile">
+<div class="avatar-wrap">
+<div class="status-badge">ESTATUS: [ESTATUS]</div>
+<img class="avatar" src="https://cdn.discordapp.com/attachments/1475569986352316560/1553533921969315862/1f9a91d7e4bce09f89e82c89e9d40e8c.jpg?ex=6ab998b6&is=6ab84736&hm=35f7a510ff4fbc8de2c326d05f6887db7d5ecaaa503eb720598ba29d2879e9ac&" alt="Foto de perfil">
+</div>
+<div>
+<div class="name">[Nombre del personaje]</div>
+<div class="alias">
+<span class="alias-tag">[Alias / Apodo]</span>
+<span class="alias-tag">[Segundo alias]</span>
+</div>
+<div class="role">[ROL DEL PERSONAJE]</div>
+</div>
+</div>
+</div>
 
 <div class="panel">
-
-<div class="title">
-<span>Información básica</span>
-<span>PROFILE_01</span>
-</div>
-
-<div class="rep">
-
-<div class="rep-title">
-<span>REPUTACIÓN</span>
-<span>80%</span>
-</div>
-
-<div class="bar">
-<span style="width:80%"></span>
-</div>
-
-</div>
-
+<div class="title"><span>INFORMACIÓN BÁSICA</span><span>PROFILE_02</span></div>
 <div class="info">
-
-<div><b>EDAD</b><span>21 años</span></div>
-<div><b>CUMPLEAÑOS</b><span>XX / XX</span></div>
-
-<div><b>ALTURA</b><span>186 cm</span></div>
-<div><b>OCUPACIÓN</b><span>Estudiante</span></div>
-
-<div><b>CARRERA</b><span>Derecho</span></div>
-<div><b>PASATIEMPO</b><span>Escribir</span></div>
-
-<div><b>ROL</b><span>Interés amoroso principal</span></div>
-<div><b>CRUSH</b><span>{{user}}</span></div>
-
+<div><b>EDAD</b><span>[Edad]</span></div>
+<div><b>CUMPLEAÑOS</b><span>[Fecha]</span></div>
+<div><b>ALTURA</b><span>[Altura]</span></div>
+<div><b>OCUPACIÓN</b><span>[Ocupación]</span></div>
+<div><b>CARRERA</b><span>[Carrera]</span></div>
+<div><b>PASATIEMPO</b><span>[Pasatiempo]</span></div>
+<div><b>ROL</b><span>[Rol]</span></div>
+<div><b>ESTADO CIVIL</b><span>[Estado civil]</span></div>
 </div>
-
-<div class="status">
-<span>STATUS: ACTIVE</span>
-<span>FIRST HAVEN ©</span>
 </div>
-
-</div>
-
-
-<!-- DATOS IMPORTANTES + PERSONALIDAD -->
 
 <div class="panel">
-
-<div class="title">
-<span>Character Data</span>
-<span>PROFILE_02</span>
+<div class="title"><span>𖹭 ESTADÍSTICAS</span><span>DATOS_01</span></div>
+<div class="stat"><div class="stat-name"><span>REPUTACIÓN</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>ESTRÉS</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>SANIDAD / CORDURA</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>OBSESIÓN</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
 </div>
 
+<div class="panel">
+<div class="title"><span>𖹭 BIOGRAFÍA DEL PERSONAJE</span><span>HISTORIA_01</span></div>
+<details class="file" open>
+<summary><span class="file-title play">&gt;&gt; ABRIR BIOGRAFÍA.TXT</span></summary>
+<div class="file-body"><div class="scrollbox">[Biografía extensa del personaje. Escribe aquí toda la información general e importante del personaje. El contenido de esta caja no tiene la animación de máquina de escribir.]</div></div>
+</details>
+</div>
+
+<div class="panel">
+<div class="title"><span>𖹭 TRASFONDO</span><span>HISTORIA_02</span></div>
+<details class="file">
+<summary><span class="file-title">&gt;&gt; ABRIR TRASFONDO.LOG</span></summary>
+<div class="file-body"><div class="scrollbox">[Información extensa sobre el trasfondo del personaje. Puedes colocar aquí acontecimientos, historia familiar, experiencias, relaciones previas y cualquier otro elemento relevante.]</div></div>
+</details>
+</div>
+
+<div class="panel">
+<div class="title"><span>𖹭 PREFERENCIAS</span><span>DATOS_02</span></div>
 <div class="double">
-
 <div class="box">
-
-<h3>DATOS IMPORTANTES</h3>
-
-<p class="fact">𖹭 Proviene de una familia reconocida.</p>
-
-<p class="fact">𖹭 Llegó a First Haven después de un acontecimiento importante.</p>
-
-<p class="fact">𖹭 Mantiene una parte de su pasado en secreto.</p>
-
+<details>
+<summary>𖹭 GUSTOS</summary>
+<div class="inside">
+<ul class="list">
+<li>[Gusto]</li><li>[Gusto]</li><li>[Gusto]</li><li>[Gusto]</li><li>[Gusto]</li>
+</ul>
 </div>
-
-
+</details>
+</div>
 <div class="box">
-
-<h3>PERSONALITY</h3>
-
-<div class="trait">
-
-<div class="trait-name">
-<span>Sanidad</span>
-<span>70%</span>
+<details>
+<summary>× DISGUSTOS</summary>
+<div class="inside">
+<ul class="list">
+<li>[Disgusto]</li><li>[Disgusto]</li><li>[Disgusto]</li><li>[Disgusto]</li><li>[Disgusto]</li>
+</ul>
 </div>
-
-<div class="bar">
-<span style="width:70%"></span>
+</details>
 </div>
-
 </div>
-
-<div class="trait">
-
-<div class="trait-name">
-<span>Obsesión</span>
-<span>40%</span>
 </div>
-
-<div class="bar">
-<span style="width:40%"></span>
-</div>
-
-</div>
-
-<div class="trait">
-
-<div class="trait-name">
-<span>Empatía</span>
-<span>60%</span>
-</div>
-
-<div class="bar">
-<span style="width:60%"></span>
-</div>
-
-</div>
-
-<div class="trait">
-
-<div class="trait-name">
-<span>Control</span>
-<span>80%</span>
-</div>
-
-<div class="bar">
-<span style="width:80%"></span>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-<!-- RELACIONES -->
 
 <div class="panel">
-
-<div class="title">
-<span>Relaciones</span>
-<span>PROFILE_03</span>
+<div class="title"><span>𖹭 AMOR</span><span>LOVE_01</span></div>
+<div class="box" style="margin-bottom:6px">
+<details class="file crush-file">
+<summary><span class="file-title">&gt;&gt; CRUSH.EXE</span></summary>
+<div class="file-body">
+<div class="scrollbox">
+<b style="color:var(--d)">CRUSH:</b> [Crush]
+<br><br>[Información adicional sobre el crush o la dinámica romántica.]
+</div>
+</div>
+</details>
+</div>
+<div class="stats-box">
+<div class="stats-title">LOVE LANGUAGE</div>
+<div class="love-item"><div class="stat-name"><span>CONTACTO FÍSICO</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="love-item"><div class="stat-name"><span>ACTOS DE SERVICIO</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="love-item"><div class="stat-name"><span>TIEMPO DE CALIDAD</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="love-item"><div class="stat-name"><span>REGALOS</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="love-item"><div class="stat-name"><span>PALABRAS DE AFIRMACIÓN</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+</div>
 </div>
 
-<div class="relationship">
-<span class="relationship-name">𖹭 {{user}}</span>
-<span class="relation-tag">CRUSH</span>
+<div class="panel">
+<div class="title"><span>𖹭 INTERESTS.EXE</span><span>INTERESES_01</span></div>
+<div class="accordion">
+<details><summary>INTERESES</summary><div class="inside"><ul class="list"><li>[Interés]</li><li>[Interés]</li><li>[Interés]</li><li>[Interés]</li><li>[Interés]</li></ul></div></details>
+<details><summary>OTROS</summary><div class="inside"><ul class="list"><li>[Interés]</li><li>[Interés]</li><li>[Interés]</li><li>[Interés]</li><li>[Interés]</li></ul></div></details>
+</div>
 </div>
 
-<div class="relationship">
-<span class="relationship-name">𖹭 Nombre del personaje</span>
-<span class="relation-tag">AMIGO</span>
+<div class="panel">
+<div class="title"><span>𖹭 NOW PLAYING / MP3</span><span>MP3.EXE</span></div>
+<div class="player">
+<div class="player-top">
+<div class="album">♫</div>
+<div class="song"><b>[Título de la canción]</b><span>[Artista]</span></div>
+</div>
+<div class="controls">
+<span class="control">◀</span>
+<span class="control">▶</span>
+<span class="control">■</span>
+<div class="timeline"><span></span></div>
+<span style="font-size:6px">00:00</span>
+</div>
+</div>
 </div>
 
-<div class="relationship">
-<span class="relationship-name">𖹭 Nombre del personaje</span>
-<span class="relation-tag">FAMILIAR</span>
+<div class="panel">
+<div class="title"><span>𖹭 INFORMACIÓN ADICIONAL</span><span>DATOS_03</span></div>
+<div class="accordion">
+<details><summary>NOTAS DEL PERSONAJE</summary><div class="inside">[Información adicional.]<br><br>[Dato adicional.]<br><br>[Dato adicional.]</div></details>
+</div>
 </div>
 
-<div class="relationship">
-<span class="relationship-name">𖹭 Nombre del personaje</span>
-<span class="relation-tag">DESCONOCIDO</span>
+<div class="panel">
+<div class="title"><span>𖹭 ATRIBUTOS</span><span>STATS_01</span></div>
+<div class="stats">
+<div class="stats-box">
+<div class="stats-title">MENTALES</div>
+<div class="stat"><div class="stat-name"><span>FELICIDAD</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>EMPATÍA</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>AUTOCONTROL</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>INTUICIÓN</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>DETERMINACIÓN</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+</div>
+<div class="stats-box">
+<div class="stats-title">HABILIDADES</div>
+<div class="stat"><div class="stat-name"><span>INTELECTO ACADÉMICO</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>CARISMA / SEDUCCIÓN</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>CONDICIÓN FÍSICA</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>FUERZA / DEFENSA</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+<div class="stat"><div class="stat-name"><span>DISCRECIÓN / SIGILO</span><span>100%</span></div><div class="bar"><span style="width:100%"></span></div></div>
+</div>
+</div>
 </div>
 
+<div class="panel">
+<div class="title"><span>𖹭 RELACIONES</span><span>RELACIONES_01</span></div>
+<div class="accordion">
+<details><summary class="relation-line"><span class="relation-name">𖹭 {{user}}</span><span class="relation-tag">RELACIÓN</span></summary><div class="inside">[Información sobre la relación con {{user}}.]</div></details>
+<details><summary class="relation-line"><span class="relation-name">𖹭 [Nombre]</span><span class="relation-tag">RELACIÓN</span></summary><div class="inside">[Información sobre esta relación.]</div></details>
+<details><summary class="relation-line"><span class="relation-name">𖹭 [Nombre]</span><span class="relation-tag">RELACIÓN</span></summary><div class="inside">[Información sobre esta relación.]</div></details>
+<details><summary class="relation-line"><span class="relation-name">𖹭 [Nombre]</span><span class="relation-tag">RELACIÓN</span></summary><div class="inside">[Información sobre esta relación.]</div></details>
+</div>
 </div>
 
-
-<!-- FOOTER -->
+<div class="panel">
+<div class="title"><span>ABOUT.EXE — ADVERTENCIA</span><span>SYSTEM</span></div>
+<div class="about">
+<div class="about-head">SYSTEM MESSAGE :: FIRST HAVEN</div>
+<div class="about-body"><span class="warning">⚠ ADVERTENCIA:</span><br>[Advertencia, curiosidad o nota importante sobre este personaje.]</div>
+</div>
+</div>
 
 <div class="status">
-<span>LAST UPDATED: 200X</span>
-<span>𖹭 FIRST HAVEN</span>
+<span>ÚLTIMA ACTUALIZACIÓN: 26/09/26</span>
+<span>𖹭 FIRST HAVEN ©Phaqura's</span>
 </div>
 
 </div>
 </div>
 
+<script>
+function typeTitle(e){e.classList.remove("play");void e.offsetWidth;e.classList.add("play")}
+document.querySelectorAll(".file").forEach(f=>{const t=f.querySelector(".file-title");if(f.open)typeTitle(t);f.addEventListener("toggle",()=>{if(f.open)typeTitle(t)})});
+</script>
 </body>
 </html>
